@@ -1,12 +1,13 @@
 {
   "name": "fuse.js",
-  "main": "index.d.ts",
+  "main": "fuse.d.ts",
+  "global": true,
   "homepage": "https://github.com/krisk/Fuse",
-  "version": "",
+  "version": "2.2.0",
   "devDependencies": {
     "blue-tape": "registry:npm/blue-tape#0.1.0+20160322235613"
   },
-  "ambientDevDependencies": {
-    "node": "registry:dt/node#4.0.0+20160319033040"
+  "globalDevDependencies": {
+    "node": "registry:env/node#4.0.0+20160507210304"
   }
 }
