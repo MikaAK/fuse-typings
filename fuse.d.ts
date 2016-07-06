@@ -25,13 +25,15 @@ declare module 'fuse.js' {
     search(pattern: string): any[];
   }
 
-  export = class Fuse<T> {
+  class Fuse<T> {
     public list: T[];
     public options: FuseOptions;
 
     constructor(list: T[], options: FuseOptions);
     public set(list: T[]): T[];
     public search(pattern: string): T[];
-  };
+  }
+  
+  export = Fuse;
 }
 
